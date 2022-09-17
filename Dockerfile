@@ -7,5 +7,5 @@ COPY package*.json ./
 RUN npm ci 
 # Bundle app source
 COPY . .
-EXPOSE 8100
+EXPOSE 8000
 CMD [ "npm", "run", "prod" ]
